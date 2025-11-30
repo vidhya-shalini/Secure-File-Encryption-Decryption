@@ -1,7 +1,9 @@
 🔐 Secure File Encryption & Decryption Tool
+
   A modern, GUI-based AES-256-GCM file encryption & decryption application built using Python. Features password-based encryption, key-file support, SHA-256 integrity          validation, streaming for large files, and a premium gold-black themed Tkinter interface.
 
 ✨ Features
+
   AES-256-GCM Encryption & Decryption (authenticated & secure)
   PBKDF2 (200k rounds) for password-based key derivation
   Random 256-bit Key File support (.key)
@@ -15,6 +17,7 @@
 🛡️ How It Works
 
 Encryption:
+
   User selects a file.
   Provides a password or loads a .key file.
   Tool generates:
@@ -25,6 +28,7 @@ Encryption:
   Header + ciphertext + authentication tag are saved into .enc.
 
 Decryption:
+
   Reads header & validates signature (ENCRv2).
   Derives key using password or raw key.
   Decrypts in streams.
@@ -32,6 +36,7 @@ Decryption:
   Restores original file if everything matches.
 
 📁 File Structure
+
   Component	Description
   MAGIC	Signature to validate encrypted files
   PBKDF2	Converts password → AES key
@@ -39,6 +44,7 @@ Decryption:
   AES-256-GCM	Encryption and authentication
 
 🖥️ GUI Preview
+
   Gold + Black Royal Design
   Custom generated background
   Minimal rounded card with glow
@@ -46,6 +52,7 @@ Decryption:
   Clean button hover effects
 
 🚀 Usage
+
   1. Install dependencies
   pip install pycryptodome pillow
   
